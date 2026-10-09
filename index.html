@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Missão Levi Jorge • 1 Ano</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600;1,700&family=Outfit:wght@300;400;600&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#03031a;--bg2:#120a3a;--ink:#f7f4ff;--mut:#c4bff0;--gold:#ffd36b;--gold2:#fff3bf;--vio:#8b5cf6;--blu:#38bdf8;--glass:rgba(24,20,76,.42);--bd:rgba(255,255,255,.18);--n1:rgba(124,58,237,.42);--n2:rgba(37,99,235,.32);--n3:rgba(236,72,153,.2);--fd:'Cormorant Garamond',Georgia,serif;--fb:'Outfit',system-ui,sans-serif;--ft:'Orbitron',system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+:root[data-theme=light]{--bg1:#2b1a72;--bg2:#b4509e;--glass:rgba(255,255,255,.16);--n1:rgba(255,170,110,.4);--n2:rgba(255,110,190,.35);--n3:rgba(255,226,120,.3)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit;margin:0}
+body{background:#03031a linear-gradient(var(--bg1),var(--bg2)) fixed;color:var(--ink);font:300 1.05rem/1.7 var(--fb);overflow-x:hidden}
+body.lk{overflow:hidden}
+.neb{position:fixed;inset:-10%;z-index:0;background:radial-gradient(40% 35% at 20% 25%,var(--n1),transparent 70%),radial-gradient(45% 40% at 80% 35%,var(--n2),transparent 70%),radial-gradient(40% 40% at 55% 85%,var(--n3),transparent 70%);filter:blur(30px);animation:nb 28s ease-in-out infinite alternate}
+@keyframes nb{to{transform:translate3d(3%,-3%,0) scale(1.12) rotate(4deg)}}
+#c{position:fixed;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.pl{position:fixed;z-index:1;pointer-events:none;opacity:.88}
+.pl i{display:block;border-radius:50%;position:relative;animation:fl 9s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-22px) rotate(6deg)}}
+.p1{width:clamp(70px,14vw,150px);aspect-ratio:1;background:radial-gradient(circle at 30% 28%,#fff3bf,#ffb347 45%,#9a4d12);box-shadow:0 0 50px rgba(255,200,90,.45),inset -14px -10px 30px rgba(0,0,0,.45)}
+.p1::after{content:"";position:absolute;inset:-18% -48%;border:6px solid rgba(255,230,160,.7);border-radius:50%;transform:rotate(-22deg) scaleY(.28);box-shadow:0 0 20px rgba(255,200,90,.5)}
+.p2{width:clamp(50px,9vw,100px);aspect-ratio:1;background:radial-gradient(circle at 30% 30%,#f0e1ff,#8b5cf6 50%,#2a0f6b);box-shadow:0 0 45px rgba(139,92,246,.6),inset -10px -8px 22px rgba(0,0,0,.5)}
+.p3{width:clamp(44px,7vw,80px);aspect-ratio:1;background:radial-gradient(circle at 30% 30%,#dff6ff,#38bdf8 50%,#0b3d78);box-shadow:0 0 40px rgba(56,189,248,.55),inset -8px -6px 18px rgba(0,0,0,.5)}
+.orb{position:absolute;inset:-60%;border:1px dashed rgba(255,255,255,.3);border-radius:50%;animation:sp 12s linear infinite}
+.orb::after{content:"";position:absolute;top:-6px;left:50%;width:12px;height:12px;border-radius:50%;background:#fff;box-shadow:0 0 12px #fff}
+@keyframes sp{to{transform:rotate(360deg)}}
+[data-rk] svg{display:block;width:100%}
+.fl{transform-box:fill-box;transform-origin:50% 0;animation:fk .12s ease-in-out infinite alternate}
+@keyframes fk{to{transform:scaleY(1.45)}}
+/* intro */
+#in{position:fixed;inset:0;z-index:50;display:grid;place-items:center;text-align:center;background:radial-gradient(circle at 50% 110%,rgba(120,60,255,.55),rgba(3,3,26,.15) 70%);padding:env(safe-area-inset-top,0px) 16px env(safe-area-inset-bottom,0px);transition:transform 1.4s cubic-bezier(.7,0,.3,1),opacity 1.4s}
+#in.out{transform:translateY(-100%);opacity:0;pointer-events:none}
+.msg{font:700 clamp(1rem,4.2vw,1.5rem) var(--ft);letter-spacing:.16em;color:var(--gold2);text-shadow:0 0 18px var(--gold);min-height:4.2em;opacity:0;transition:opacity .6s}
+.msg.big{font-size:clamp(1.3rem,6vw,2.4rem)}
+.cd{font:700 clamp(5rem,26vw,10rem)/1.1 var(--ft);height:1.1em;color:#fff;text-shadow:0 0 30px var(--blu),0 0 80px var(--vio)}
+.cd b{display:inline-block;animation:pop .9s ease-out both}
+@keyframes pop{0%{transform:scale(2.4);opacity:0}25%{opacity:1}100%{transform:scale(.8);opacity:.25}}
+#in .rk{width:64px;margin:1rem auto 0;transition:transform 1.6s cubic-bezier(.6,0,1,.6)}
+#in .rk.sh{animation:shk .08s linear infinite}
+#in .rk.go{transform:translateY(-130vh)}
+@keyframes shk{50%{transform:translate(2px,-2px)}}
+#sk{position:absolute;bottom:calc(env(safe-area-inset-bottom,0px) + 18px);background:none;border:1px solid var(--bd);color:var(--mut);padding:8px 18px;border-radius:99px;font:inherit;font-size:.85rem;cursor:pointer}
+.ctl{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);right:12px;z-index:60;display:flex;gap:8px}
+.ctl button{width:44px;height:44px;border-radius:50%;border:1px solid var(--bd);background:var(--glass);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);color:#fff;font-size:1.1rem;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.ctl button:hover{transform:scale(1.12);box-shadow:0 0 20px var(--vio)}
+button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+/* hero */
+.hero{position:relative;z-index:2;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:84px 20px 76px}
+.tag{font:400 .95rem var(--fb);letter-spacing:.3em;color:var(--blu);text-shadow:0 0 14px var(--blu)}
+.sub{color:var(--mut);margin-top:.4rem}
+.nm{font:italic 700 clamp(3.8rem,18vw,9.5rem)/.95 var(--fd);margin:.5rem 0;padding:0 .1em .08em;background:linear-gradient(100deg,#fff 0%,var(--gold) 30%,#fff 50%,var(--gold) 70%,#fff 100%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 6s linear infinite;filter:drop-shadow(0 0 22px rgba(255,211,107,.55))}
+@keyframes sh{to{background-position:-250% 0}}
+.age{position:relative;width:104px;aspect-ratio:1;margin:.6rem auto;display:grid;place-items:center}
+.age::before{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(#38bdf8,#8b5cf6,#ff8bd1,#ffd36b,#38bdf8);animation:sp 6s linear infinite;box-shadow:0 0 40px rgba(139,92,246,.6)}
+.age span{position:relative;width:calc(100% - 6px);aspect-ratio:1;border-radius:50%;background:#0d0a33;display:flex;flex-direction:column;align-items:center;justify-content:center;font:600 .8rem/1 var(--ft);letter-spacing:.2em;color:var(--gold2)}
+.age b{font:700 2.8rem/1 var(--ft);color:#fff;text-shadow:0 0 18px var(--gold)}
+.ast{width:clamp(110px,26vw,170px);margin-top:.6rem;filter:drop-shadow(0 0 25px rgba(139,92,246,.7));animation:fa 8s ease-in-out infinite}
+@keyframes fa{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-16px) rotate(4deg)}}
+.rk2{position:absolute;width:42px;right:8%;bottom:20%;transform:rotate(35deg);animation:fr 7s ease-in-out infinite}
+@keyframes fr{50%{transform:translate(-14px,-34px) rotate(42deg)}}
+.cue{margin-top:1.4rem;color:var(--mut);text-decoration:none;font-size:.9rem;display:flex;flex-direction:column;align-items:center;gap:2px}
+.cue i{font-style:normal;color:var(--gold);animation:bn 1.6s ease-in-out infinite}
+@keyframes bn{50%{transform:translateY(6px)}}
+.rd .hero>*{animation:up 1.1s var(--d,0s) both}
+.rd .hero .nm{animation:sh 6s linear infinite,nin 2.2s .5s ease-out both}
+.rd .hero .ast{animation:fa 8s ease-in-out infinite,up 1.1s 1.8s both}
+.rd .hero .rk2{animation:fr 7s ease-in-out infinite,up 1.1s 2s both}
+@keyframes up{from{opacity:0;translate:0 24px}}
+@keyframes nin{from{opacity:0;filter:blur(18px) drop-shadow(0 0 22px #ffd36b);letter-spacing:.22em;scale:1.25}}
+/* sections */
+.s{position:relative;z-index:2;max-width:1040px;margin:auto;padding:clamp(56px,10vw,100px) 20px;text-align:center}
+h2{font:italic 600 clamp(2.2rem,8vw,3.8rem)/1.1 var(--fd);color:var(--gold2);text-shadow:0 0 24px rgba(255,211,107,.45);margin-bottom:1.4rem}
+.gl{position:relative;overflow:hidden;background:var(--glass);border:1px solid var(--bd);border-radius:24px;-webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4);box-shadow:0 20px 60px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.2);transition:transform .2s ease-out,border-color .3s,box-shadow .3s}
+.gl::before{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--x,50%) var(--y,0%),rgba(255,255,255,.22),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.gl::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(120,220,255,.12) 42%,rgba(255,140,220,.14) 50%,rgba(255,230,140,.12) 58%,transparent 70%);background-size:300% 100%;animation:hl 7s linear infinite;pointer-events:none}
+@keyframes hl{to{background-position:-300% 0}}
+.gl:hover::before{opacity:1}
+.gl:hover{border-color:rgba(255,211,107,.6);box-shadow:0 20px 60px rgba(0,0,0,.35),0 0 40px rgba(139,92,246,.5)}
+.rv{opacity:0;transform:translateY(36px);transition:opacity .9s,transform .9s}
+.rv.in{opacity:1;transform:none}
+.st{padding:clamp(24px,5vw,44px);font-size:1.12rem;max-width:720px;margin:auto}
+.st p+p{margin-top:1rem}
+.gr{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.log{margin:18px auto 0;max-width:720px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.log .gl{padding:16px}
+.log b{display:block;font:700 .95rem var(--ft);color:var(--gold)}
+.cd2{padding:28px 20px}
+.cd2 .ic{font-size:2rem;width:64px;height:64px;margin:0 auto 12px;display:grid;place-items:center;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.5),transparent 70%);box-shadow:0 0 30px rgba(139,92,246,.5)}
+.cd2 small{display:block;font-size:.9rem;color:var(--blu)}
+.cd2 strong{display:block;font:italic 600 1.75rem/1.2 var(--fd);color:#fff;margin:.2rem 0}
+.cd2 span,.log span,.pad p{color:var(--mut)}
+#cdw{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(8px,2vw,18px);max-width:640px;margin:0 auto}
+#cdw .gl{padding:18px 4px}
+#cdw b{display:block;font:700 clamp(1.7rem,8vw,3rem)/1.1 var(--ft);color:#fff;text-shadow:0 0 14px var(--blu),0 0 34px var(--vio)}
+#cdw b.bump{animation:bm .5s}
+@keyframes bm{40%{transform:scale(1.18);color:var(--gold2)}}
+#cdw small{font-size:.8rem;color:var(--mut)}
+.pad{padding:32px 22px}
+.pad h2{font-size:clamp(1.9rem,6vw,2.6rem);margin-bottom:.6rem}
+.btn{position:relative;overflow:hidden;display:inline-flex;gap:.6rem;align-items:center;justify-content:center;margin-top:1.3rem;padding:15px 28px;border-radius:99px;font:600 1rem var(--fb);color:#fff;text-decoration:none;transition:transform .25s}
+.btn::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);animation:sw 3s infinite}
+@keyframes sw{60%,100%{left:130%}}
+.btn:hover{transform:translateY(-3px) scale(1.05)}
+.wa{background:linear-gradient(135deg,#22c55e,#0d9f6e);animation:pu 2s infinite}
+@keyframes pu{0%{box-shadow:0 0 0 0 rgba(34,197,94,.6)}70%,100%{box-shadow:0 0 0 22px rgba(34,197,94,0)}}
+.mp{background:linear-gradient(135deg,#6d4aff,#38bdf8);box-shadow:0 8px 30px rgba(109,74,255,.5)}
+.end{padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+.rk3{width:54px;margin:0 auto 1.4rem;animation:fl 5s ease-in-out infinite}
+.fin{font:italic 600 clamp(1.8rem,6.5vw,3.2rem)/1.25 var(--fd);color:var(--gold2);text-shadow:0 0 26px rgba(255,211,107,.5);max-width:760px;margin:auto}
+.end small{display:block;margin-top:1.4rem;color:var(--mut)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body class="lk">
+<div class="neb"></div>
+<div class="pl" data-d=".9" style="top:9%;left:4%"><i class="p1"></i></div>
+<div class="pl" data-d=".5" style="top:56%;right:3%"><i class="p2"></i></div>
+<div class="pl" data-d=".7" style="top:78%;left:12%"><i class="p3"><b class="orb"></b></i></div>
+<canvas id="c"></canvas>
+
+<div class="ctl"><button id="snd" aria-label="Ligar ou desligar o som">🔇</button><button id="th" aria-label="Alternar entre céu noturno e amanhecer">🌙</button></div>
+
+<div id="in">
+  <div><div class="msg" id="msg">Preparar para decolar...</div><div class="cd" id="cd"></div><div class="rk" data-rk></div></div>
+  <button id="sk">Pular</button>
+</div>
+
+<header class="hero">
+  <div class="tag" style="--d:.2s">✦ Missão Espacial ✦</div>
+  <p class="sub" style="--d:.35s">Você foi convocado para o primeiro aniversário de</p>
+  <h1 class="nm">Levi Jorge</h1>
+  <div class="age" style="--d:1.4s"><span><b>1</b>ANO</span></div>
+  <div class="ast" data-a></div>
+  <div class="rk2" data-rk></div>
+  <a class="cue" href="#hist" style="--d:2.2s">Role para continuar a missão<i>↓</i></a>
+</header>
+
+<section class="s" id="hist">
+  <h2 class="rv">A história da missão</h2>
+  <div class="gl st rv">
+    <p>Há um ano, uma pequena estrela decidiu pousar em nossas vidas. Chegou sem mapa e sem aviso, e transformou tudo ao redor em luz.</p>
+    <p>Foram 365 dias de missão: noites sem dormir, descobertas gigantes, primeiros sorrisos, gargalhadas que iluminam a casa inteira e abraços maiores que qualquer galáxia.</p>
+    <p>O Levi completou sua primeira órbita ao redor do Sol, e queremos você a bordo desse momento inesquecível.</p>
+  </div>
+  <div class="gr log rv">
+    <div class="gl t"><b>Dia 0</b><span>Lançamento do nosso astronauta</span></div>
+    <div class="gl t"><b>Dia 365</b><span>Primeira órbita completa</span></div>
+    <div class="gl t"><b>Dia 366</b><span>Começa uma nova aventura</span></div>
+  </div>
+</section>
+
+<section class="s">
+  <h2 class="rv">Dados da missão</h2>
+  <div class="gr rv">
+    <div class="gl t cd2"><div class="ic">🗓️</div><small>Data</small><strong>16 de Maio de 2027</strong><span>Domingo</span></div>
+    <div class="gl t cd2"><div class="ic">⏰</div><small>Horário</small><strong>11h30</strong><span>Pontualidade de astronauta</span></div>
+    <div class="gl t cd2"><div class="ic">🪐</div><small>Local</small><strong>Espaço Bianca Nogueira</strong><span>Nossa base de lançamento</span></div>
+    <div class="gl t cd2"><div class="ic">📍</div><small>Endereço</small><strong>Rua Celuta, Nº 207</strong><span>Citrópolis, Japeri - RJ</span></div>
+  </div>
+</section>
+
+<section class="s">
+  <h2 class="rv">Contagem para o lançamento</h2>
+  <div id="cdw" class="rv"></div>
+  <p id="cdm" style="margin-top:1rem;font-size:1.2rem"></p>
+</section>
+
+<section class="s">
+  <div class="gr rv">
+    <div class="gl t pad"><h2>Confirme sua presença</h2><p>Garanta seu lugar a bordo e avise a tripulação que você vem.</p><a class="btn wa" id="wa" target="_blank" rel="noopener">💬 Confirmar no WhatsApp</a></div>
+    <div class="gl t pad"><h2>Como chegar</h2><p>Espaço Bianca Nogueira, em Citrópolis, Japeri - RJ.</p><a class="btn mp" id="mp" target="_blank" rel="noopener">📍 Abrir no Google Maps</a></div>
+  </div>
+</section>
+
+<footer class="s end">
+  <div class="rk3" data-rk></div>
+  <p class="fin rv">Esperamos você para celebrar esta missão incrível chamada Levi Jorge.</p>
+  <small class="rv">16.05.2027 • 11h30</small>
+</footer>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const WA="5521969023595"; // WhatsApp para confirmação (DDI + DDD + número, só dígitos)
+const EV=new Date("2027-05-16T11:30:00-03:00");
+const RK=`<svg viewBox="0 0 60 130"><g class="fl"><path d="M20 92q10 38 10 38t10-38z" fill="#ffb347"/><path d="M24 92q6 22 6 22t6-22z" fill="#fff3bf"/></g><path d="M30 2C44 20 48 48 44 92H16C12 48 16 20 30 2z" fill="#f4f1ff"/><path d="M30 2C20 18 14 50 16 92h6C20 50 22 24 30 2z" fill="#cfc6f5"/><path d="M30 2c-5 7-8 13-10 20h20c-2-7-5-13-10-20z" fill="#ffd36b"/><circle cx="30" cy="48" r="9" fill="#1b1750" stroke="#ffd36b" stroke-width="3"/><circle cx="27" cy="45" r="2.5" fill="#7dd3fc"/><path d="M16 66L2 98l16-8zM44 66l14 32-16-8z" fill="#8b5cf6"/></svg>`;
+const AS=`<svg viewBox="0 0 140 170"><rect x="30" y="68" width="80" height="62" rx="18" fill="#cfc6f5"/><rect x="40" y="74" width="60" height="62" rx="22" fill="#fff"/><circle cx="70" cy="108" r="11" fill="#ffd36b"/><text x="70" y="113" font-size="14" font-weight="700" text-anchor="middle" fill="#3b1a8a" font-family="Orbitron,sans-serif">1</text><rect x="14" y="78" width="22" height="46" rx="11" fill="#fff" transform="rotate(25 25 80)"/><rect x="104" y="78" width="22" height="46" rx="11" fill="#fff" transform="rotate(-25 115 80)"/><rect x="46" y="128" width="20" height="34" rx="10" fill="#fff"/><rect x="74" y="128" width="20" height="34" rx="10" fill="#fff"/><rect x="46" y="150" width="20" height="12" rx="6" fill="#8b5cf6"/><rect x="74" y="150" width="20" height="12" rx="6" fill="#8b5cf6"/><circle cx="70" cy="46" r="40" fill="#fff"/><circle cx="70" cy="48" r="31" fill="#1b1750" stroke="#ffd36b" stroke-width="3"/><ellipse cx="70" cy="52" rx="22" ry="20" fill="#ffd9b8"/><circle cx="62" cy="50" r="3" fill="#3b1a1a"/><circle cx="78" cy="50" r="3" fill="#3b1a1a"/><path d="M63 59q7 6 14 0" stroke="#c0504d" stroke-width="2.5" fill="none" stroke-linecap="round"/><circle cx="57" cy="57" r="3.5" fill="#ff9aa2" opacity=".6"/><circle cx="83" cy="57" r="3.5" fill="#ff9aa2" opacity=".6"/><path d="M50 30q10-10 24-8" stroke="#fff" stroke-width="3" fill="none" opacity=".55" stroke-linecap="round"/></svg>`;
+$$('[data-rk]').forEach(e=>e.innerHTML=RK);$$('[data-a]').forEach(e=>e.innerHTML=AS);
+$('#wa').href=`https://wa.me/${WA}?text=`+encodeURIComponent("Olá! Confirmo minha presença na Missão Espacial do Levi Jorge (16/05/2027, 11h30). 🚀 Nome e nº de convidados: ");
+$('#mp').href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent('Espaço Bianca Nogueira, Rua Celuta, 207, Citrópolis, Japeri - RJ');
+
+/* som (opcional, sintetizado) */
+let AC,mg,on=0;
+function au(){if(AC)return;AC=new(window.AudioContext||window.webkitAudioContext)();mg=AC.createGain();mg.gain.value=0;mg.connect(AC.destination);const f=AC.createBiquadFilter();f.type='lowpass';f.frequency.value=500;f.connect(mg);[55,82.4,110.5,164.8].forEach((hz,i)=>{const o=AC.createOscillator(),g=AC.createGain();o.type=i%2?'triangle':'sine';o.frequency.value=hz;g.gain.value=.18/(i+1);o.connect(g);g.connect(f);o.start()});const l=AC.createOscillator(),lg=AC.createGain();l.frequency.value=.08;lg.gain.value=300;l.connect(lg);lg.connect(f.frequency);l.start()}
+$('#snd').onclick=()=>{au();on=!on;AC.resume();mg.gain.setTargetAtTime(on?.5:0,AC.currentTime,.4);$('#snd').textContent=on?'🔊':'🔇'};
+function bp(f=660,d=.35,t='sine'){if(!on)return;const o=AC.createOscillator(),g=AC.createGain(),n=AC.currentTime;o.type=t;o.frequency.setValueAtTime(f,n);o.frequency.exponentialRampToValueAtTime(f*2,n+d);g.gain.setValueAtTime(.1,n);g.gain.exponentialRampToValueAtTime(.001,n+d);o.connect(g);g.connect(AC.destination);o.start();o.stop(n+d)}
+
+/* céu: estrelas, meteoros, partículas */
+const cv=$('#c'),x=cv.getContext('2d'),PL=$$('.pl');
+let W,H,D,S=[],P=[],MT=[],mx=-999,my=-999,nx=0,ny=0,tx=0,ty=0,sy=0,wp=0,wt=0;
+function rs(){D=Math.min(devicePixelRatio||1,2);W=innerWidth;H=innerHeight;cv.width=W*D;cv.height=H*D;x.setTransform(D,0,0,D,0,0);S=Array.from({length:Math.min(280,W*H/5500|0)},()=>({x:Math.random()*W,y:Math.random()*H,z:Math.random(),p:Math.random()*6.3,s:.6+Math.random()*2,h:[45,200,270,320][Math.random()*4|0]})).map(s=>(s.r=.4+s.z*1.5,s))}
+addEventListener('resize',rs);rs();
+function burst(px,py,n=24){for(let i=0;i<n;i++){const a=Math.random()*6.3,v=1.5+Math.random()*4.5;P.push({x:px,y:py,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:1,d:.012+Math.random()*.015,r:6+Math.random()*10,h:[45,200,280,330][i%4],st:1})}}
+addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY;tx=mx/W-.5;ty=my/H-.5;if(P.length<500)P.push({x:mx,y:my,vx:(Math.random()-.5)*.8,vy:(Math.random()-.5)*.8+.3,l:1,d:.03,r:1.5+Math.random()*2,h:[45,200,280][Math.random()*3|0]})});
+addEventListener('pointerdown',e=>{burst(e.clientX,e.clientY);bp(500+Math.random()*500,.3)});
+addEventListener('scroll',()=>sy=scrollY,{passive:true});
+function loop(t){
+  x.clearRect(0,0,W,H);nx+=(tx-nx)*.06;ny+=(ty-ny)*.06;wp+=(wt-wp)*.05;
+  for(const s of S){
+    s.y=(s.y+wp*s.z*18)%H;
+    let px=s.x-nx*s.z*40,py=((s.y-sy*s.z*.25-ny*s.z*30)%H+H)%H;
+    const dx=px-mx,dy=py-my,d=Math.hypot(dx,dy);
+    if(d<130){const f=1-d/130;px+=dx/d*f*26;py+=dy/d*f*26;x.strokeStyle=`hsla(${s.h},90%,80%,${f*.45})`;x.lineWidth=.6;x.beginPath();x.moveTo(mx,my);x.lineTo(px,py);x.stroke()}
+    const a=.45+.55*Math.sin(t/1000*s.s+s.p),c=`hsla(${s.h},90%,82%,${a})`;
+    x.fillStyle=c;
+    if(wp>.1){x.strokeStyle=c;x.lineWidth=s.r;x.beginPath();x.moveTo(px,py);x.lineTo(px,py-wp*s.z*70);x.stroke()}
+    x.beginPath();x.arc(px,py,s.r*(.8+a*.4),0,6.3);x.fill();
+    if(s.r>1.3){x.fillStyle=`hsla(${s.h},100%,70%,${a*.15})`;x.beginPath();x.arc(px,py,s.r*4,0,6.3);x.fill()}
+  }
+  if(Math.random()<.004&&MT.length<3)MT.push({x:Math.random()*W*1.2,y:-20,v:9+Math.random()*7,l:1});
+  for(const m of MT){m.x-=m.v*.8;m.y+=m.v*.5;m.l-=.008;const g=x.createLinearGradient(m.x,m.y,m.x+m.v*14,m.y-m.v*8.75);g.addColorStop(0,`rgba(255,255,255,${m.l})`);g.addColorStop(1,'transparent');x.strokeStyle=g;x.lineWidth=2;x.beginPath();x.moveTo(m.x,m.y);x.lineTo(m.x+m.v*14,m.y-m.v*8.75);x.stroke()}
+  MT=MT.filter(m=>m.l>0&&m.y<H);
+  for(const p of P){p.x+=p.vx;p.y+=p.vy;p.vx*=.97;p.vy*=.97;p.l-=p.d;x.globalAlpha=Math.max(p.l,0);x.fillStyle=`hsl(${p.h},95%,75%)`;if(p.st){x.font=p.r+'px serif';x.textAlign='center';x.fillText('✦',p.x,p.y)}else{x.beginPath();x.arc(p.x,p.y,p.r*Math.max(p.l,0),0,6.3);x.fill()}}
+  x.globalAlpha=1;P=P.filter(p=>p.l>0);
+  PL.forEach(e=>{const d=+e.dataset.d;e.style.transform=`translate3d(${-nx*d*60}px,${Math.sin(sy/500+d*5)*70*d-ny*d*40}px,0)`});
+  requestAnimationFrame(loop)
+}
+requestAnimationFrame(loop);
+
+/* abertura cinematográfica */
+const msg=$('#msg'),cd=$('#cd'),rk=$('#in .rk');let T=[],done=0;
+const at=(ms,f)=>T.push(setTimeout(f,ms));
+function launch(){
+  if(done)return;done=1;T.forEach(clearTimeout);
+  msg.textContent='Missão Levi Jorge - 1 Ano';msg.classList.add('big');msg.style.opacity=1;cd.innerHTML='';
+  rk.classList.remove('sh');rk.classList.add('go');wt=1;burst(W/2,H*.62,60);bp(70,1.8,'sawtooth');
+  setTimeout(()=>$('#in').classList.add('out'),700);
+  setTimeout(()=>{document.body.classList.remove('lk');document.body.classList.add('rd');wt=0;scrollTo(0,0)},1700);
+  setTimeout(()=>$('#in').remove(),3200);
+}
+at(300,()=>msg.style.opacity=1);
+[3,2,1].forEach((n,i)=>at(1700+i*900,()=>{cd.innerHTML=`<b>${n}</b>`;bp(520,.2,'square')}));
+at(4500,()=>{cd.innerHTML='';msg.textContent='Missão Levi Jorge - 1 Ano';msg.classList.add('big');rk.classList.add('sh');wt=.25;bp(180,1,'sawtooth')});
+at(6000,launch);
+$('#sk').onclick=launch;
+
+/* interações: brilho, inclinação 3D, revelação */
+document.addEventListener('pointermove',e=>{const g=e.target.closest&&e.target.closest('.gl');if(!g)return;const r=g.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top;g.style.setProperty('--x',px+'px');g.style.setProperty('--y',py+'px');if(g.classList.contains('t'))g.style.transform=`perspective(800px) rotateX(${(.5-py/r.height)*9}deg) rotateY(${(px/r.width-.5)*11}deg)`});
+$$('.t').forEach(g=>g.addEventListener('pointerleave',()=>g.style.transform=''));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+$$('.rv').forEach(e=>io.observe(e));
+
+/* contagem regressiva em tempo real */
+const cw=$('#cdw');cw.innerHTML=['Dias','Horas','Min','Seg'].map(l=>`<div class="gl"><b>00</b><small>${l}</small></div>`).join('');
+const nb=$$('#cdw b');
+function tick(){const d=EV-Date.now();if(d<=0){cw.style.display='none';$('#cdm').textContent='🎉 A missão está em andamento! Que comece a festa!';return}
+  [d/864e5,d/36e5%24,d/6e4%60,d/1e3%60].map(n=>String(Math.floor(n)).padStart(2,'0')).forEach((s,i)=>{if(nb[i].textContent!==s){nb[i].textContent=s;nb[i].classList.remove('bump');void nb[i].offsetWidth;nb[i].classList.add('bump')}})}
+tick();setInterval(tick,1000);
+
+/* céu noite / amanhecer */
+$('#th').onclick=()=>{const l=document.documentElement.dataset.theme!=='light';document.documentElement.dataset.theme=l?'light':'dark';$('#th').textContent=l?'☀️':'🌙';bp(880,.3)};
+</script>
+</body>
+</html>
